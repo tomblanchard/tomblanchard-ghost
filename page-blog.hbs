@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{# get "posts" }}
+  <div class="padding-top-bottom--up-1">
+    <div class="container-small">
+      <ul class="blog-articles">
+        {{# foreach posts }}
+          <li>
+            <h2 class="font-size--up-8 line-height--up-14 font-headline font-bold margin-bottom--down-3">
+              <a href="{{ url }}">
+                {{ title }}
+              </a>
+            </h2>
+
+            <div class="font-size--up-0 line-height--up-6 font-headline">
+              <time datetime="{{ date format='YYYY-MM-DD' }}">
+                {{ date format="D MMMM YYYY" }}
+              </time>
+            </div>
+          </li>
+        {{/ foreach }}
+      </ul>
+    </div>
+  </div>
+{{/ get }}

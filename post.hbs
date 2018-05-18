@@ -1,0 +1,27 @@
+{{!< default}}
+
+{{# post }}
+  <div class="padding-top-bottom--up-1">
+    <div class="container-small">
+      <div class="margin-bottom--up-3">
+        <h1 class="font-size--up-8 line-height--up-14 font-headline font-bold margin-bottom--down-3">
+          {{ title }}
+        </h1>
+
+        <div class="font-size--0 line-height--up-6 font-headline">
+          <time datetime="{{ date format='YYYY-MM-DD' }}">
+            {{ date format="D MMMM YYYY" }}
+          </time>
+        </div>
+      </div>
+
+      <div class="margin-bottom--up-3">
+        <div class="box-accent" style="width: 100px; height: 5px;"></div>
+      </div>
+
+      <div class="rte-article">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+{{/ post }}
